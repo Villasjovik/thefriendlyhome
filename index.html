@@ -65,8 +65,8 @@
     /* ─── CURTAIN ───────────────────────────── */
     #curtain { position:fixed;inset:0;z-index:8000;pointer-events:none;display:grid;grid-template-columns:1fr 1fr; }
     .curtain-panel { background:var(--bg2);transition:transform 1.2s .32s cubic-bezier(.76,0,.24,1); }
-    body.ready .curtain-panel:first-child { transform:translateX(-101%); }
-    body.ready .curtain-panel:last-child  { transform:translateX(101%); }
+    body.ready .curtain-panel:first-child { transform:translateX(-101%); transition-delay:1.9s; }
+    body.ready .curtain-panel:last-child  { transform:translateX(101%);  transition-delay:1.9s; }
     #curtain-center { position:fixed;inset:0;z-index:8001;display:flex;align-items:center;justify-content:center;pointer-events:none;flex-direction:column;gap:24px;transition:opacity .28s 0s ease; }
     #curtain-center img { height:clamp(52px,8vw,88px);object-fit:contain;filter:brightness(0) invert(1); }
     #curtain-center .cx { font-family:'Playfair Display',serif;font-style:italic;font-size:clamp(36px,5vw,64px);color:var(--gold);line-height:1;opacity:0;animation:curtainX .6s .25s var(--ease) forwards; }
@@ -491,13 +491,13 @@
           <li>3 autentiska UGC-klipp</li>
           <li>7 professionella produkt- och miljöbilder</li>
           <li>Fri och obegränsad nyttjanderätt på allt material</li>
-          <li>Ingen bindningstid — avsluta när ni vill</li>
+          <li>Ingen bindningstid</li>
         </ul>
       </div>
 
       <!-- PAKET 2: Långsiktigt (FEATURED) -->
       <div class="p-card feat rv d2">
-        <div class="p-badge">Bästa värdet</div>
+        <div class="p-badge">Rekommenderat</div>
         <div class="p-commitment" style="padding-top:20px;">6 månaders bindningstid</div>
         <div class="p-title">Långsiktigt</div>
         <div class="p-desc">3 UGC-klipp · 7 bilder · Levererat månadsvis</div>
@@ -515,7 +515,8 @@
 
       <!-- PAKET 3: Full räckvidd -->
       <div class="p-card rv d3">
-        <div class="p-commitment">6 månaders bindningstid</div>
+        <div class="p-badge">Bästa värdet</div>
+        <div class="p-commitment" style="padding-top:20px;">6 månaders bindningstid</div>
         <div class="p-title">Full räckvidd</div>
         <div class="p-desc">3 UGC-klipp · 7 bilder · Publicerat på Villa Sjövik</div>
         <div class="p-amt">10 000</div>
@@ -569,7 +570,7 @@
       <span class="w"><i>Låt&nbsp;</i></span><span class="w"><i>oss&nbsp;</i></span>
       <em><span class="w"><i>börja.</i></span></em>
     </h2>
-    <p class="cta-sub rv">Frågor? Justera ett paket? Hör av er — vi hittar rätt upplägg tillsammans.</p>
+    <p class="cta-sub rv">Frågor? Vill du justera ett paket? Hör av dig — vi hittar rätt upplägg tillsammans.</p>
     <div class="cta-line-wrap rv">
       <svg class="cta-line-svg" viewBox="0 0 60 2">
         <line class="cta-line" x1="0" y1="1" x2="60" y2="1" stroke="rgba(212,168,75,.6)" stroke-width="1"/>
