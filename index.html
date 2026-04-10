@@ -235,6 +235,14 @@
     .p-card.d1.v { transform:perspective(1300px) rotateY(9deg); }
     .p-card.feat.v { transform:perspective(1300px) rotateY(0deg); }
     .p-card.d3.v { transform:perspective(1300px) rotateY(-9deg); }
+    .p-card.feat.d3.v { transform:perspective(1300px) rotateY(0deg); }
+    .p-cinema-section { margin-top:48px; }
+    .p-cinema-divider { display:flex;align-items:center;gap:20px;margin-bottom:44px; }
+    .p-cinema-divider::before,.p-cinema-divider::after { content:'';flex:1;height:1px;background:rgba(255,255,255,.08); }
+    .p-cinema-divider span { font-size:9px;letter-spacing:.28em;text-transform:uppercase;color:rgba(245,239,228,.28);white-space:nowrap; }
+    .p-card.cinema { max-width:680px;margin:0 auto;border-color:rgba(184,125,58,.40);background:linear-gradient(145deg,rgba(184,125,58,.07) 0%,rgba(184,125,58,.02) 100%); }
+    .p-card.cinema::before { background:linear-gradient(90deg,transparent,var(--warm),transparent);opacity:.55;height:2px; }
+    .p-badge.amber { background:var(--warm); }
     .pricing-note { text-align:center;margin-top:40px;font-size:12px;color:rgba(245,239,228,.28);letter-spacing:.06em;line-height:1.7; }
 
     /* ─── PARTNERS ────────────────────────────── */
@@ -495,8 +503,8 @@
         </ul>
       </div>
 
-      <!-- PAKET 2: Långsiktigt (FEATURED) -->
-      <div class="p-card feat rv d2">
+      <!-- PAKET 2: Långsiktigt -->
+      <div class="p-card rv d2">
         <div class="p-badge">Rekommenderat</div>
         <div class="p-commitment" style="padding-top:20px;">6 månaders bindningstid</div>
         <div class="p-title">Långsiktigt</div>
@@ -508,13 +516,12 @@
           <li>3 autentiska UGC-klipp per månad</li>
           <li>7 professionella produkt- och miljöbilder</li>
           <li>Fri och obegränsad nyttjanderätt på allt material</li>
-          <li>Levereras vid månadens slut</li>
           <li class="hi">Spara 18 000 kr under bindningsperioden</li>
         </ul>
       </div>
 
-      <!-- PAKET 3: Full räckvidd -->
-      <div class="p-card rv d3">
+      <!-- PAKET 3: Full räckvidd (FEATURED) -->
+      <div class="p-card feat rv d3">
         <div class="p-badge">Bästa värdet</div>
         <div class="p-commitment" style="padding-top:20px;">6 månaders bindningstid</div>
         <div class="p-title">Full räckvidd</div>
@@ -531,6 +538,28 @@
       </div>
 
     </div>
+
+    <!-- CINEMA PACKAGE -->
+    <div class="p-cinema-section rv">
+      <div class="p-cinema-divider"><span>eller välj fullt producerat</span></div>
+      <div class="p-card cinema">
+        <div class="p-badge amber">Cinematisk produktion</div>
+        <div class="p-commitment" style="padding-top:20px;">6 månaders bindningstid</div>
+        <div class="p-title">Cinematisk</div>
+        <div class="p-desc">3 Reels · 10 bilder · 1 publicering på Villa Sjövik / mån</div>
+        <div class="p-amt">15 000</div>
+        <div class="p-unit">kr / mån · exkl. moms</div>
+        <p style="font-size:13px;line-height:1.85;color:rgba(245,239,228,.42);margin-top:16px;margin-bottom:28px;">Inte kortformat UGC — utan fullt producerade Reels med dedikerade inspelningsdagar, professionell klippning, redigering, musik och möjlighet till voiceover och textning.</p>
+        <ul class="p-list">
+          <li class="hi">3 fullt producerade cinematiska Reels per månad</li>
+          <li class="hi">1 Reel publicerat på Villa Sjövik per månad</li>
+          <li class="hi">2 Stories med direktlänk och CTA vid publicering</li>
+          <li>10 professionella miljö- och produktbilder</li>
+          <li>Fri och obegränsad nyttjanderätt på allt material</li>
+        </ul>
+      </div>
+    </div>
+
   </div>
 </section>
 
