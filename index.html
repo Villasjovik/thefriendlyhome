@@ -74,7 +74,7 @@
     #curtain-center .cv.cv-pill { background:rgba(255,255,255,.92);border-radius:12px;padding:10px 20px;display:flex;align-items:center;justify-content:center;height:clamp(44px,6.5vw,80px);filter:none; }
     #curtain-center .cv.cv-pill img { filter:none;mix-blend-mode:multiply;max-height:100%;max-width:clamp(100px,14vw,180px);object-fit:contain; }
     #curtain-center .cv-vs { opacity:0;animation:curtainX .6s .05s var(--ease) forwards; }
-    body.ready #curtain-center { opacity:0; }
+    body.ready #curtain-center { opacity:0;transition:opacity .4s 1.5s ease; }
     @keyframes curtainX { from{opacity:0;transform:scale(.88);}to{opacity:1;transform:scale(1);} }
 
     /* ─── HERO ──────────────────────────────── */
@@ -375,8 +375,8 @@
   <div class="inner">
     <div class="sec-lbl gold rv">Konceptet</div>
     <h2 class="sec-h2 ws">
-      <span class="w"><i>Välkommen&nbsp;</i></span><span class="w"><i>hem.</i></span>
-      <br><em><span class="w"><i>En&nbsp;</i></span><span class="w"><i>äkta&nbsp;</i></span><span class="w"><i>berättelse.</i></span></em>
+      <span class="w"><i>I&nbsp;</i></span><span class="w"><i>min&nbsp;</i></span><span class="w"><i>vardag.</i></span>
+      <br><em><span class="w"><i>The&nbsp;</i></span><span class="w"><i>Friendly&nbsp;</i></span><span class="w"><i>Home.</i></span></em>
     </h2>
     <div class="concept-grid">
       <div class="glass-card rv d2">
@@ -486,12 +486,11 @@
         <div class="p-title">Prova på</div>
         <div class="p-desc">3 UGC-klipp · 7 bilder · Levererat månadsvis</div>
         <div class="p-amt">10 000</div>
-        <div class="p-unit">kr / mån · exkl. moms</div>
+        <div class="p-unit">kr · exkl. moms</div>
         <ul class="p-list">
-          <li>3 autentiska UGC-klipp per månad</li>
+          <li>3 autentiska UGC-klipp</li>
           <li>7 professionella produkt- och miljöbilder</li>
           <li>Fri och obegränsad nyttjanderätt på allt material</li>
-          <li>Levereras vid månadens slut</li>
           <li>Ingen bindningstid — avsluta när ni vill</li>
         </ul>
       </div>
@@ -510,7 +509,7 @@
           <li>7 professionella produkt- och miljöbilder</li>
           <li>Fri och obegränsad nyttjanderätt på allt material</li>
           <li>Levereras vid månadens slut</li>
-          <li class="hi">Spara 18 000 kr per år jämfört med månadsvis</li>
+          <li class="hi">Spara 18 000 kr under bindningsperioden</li>
         </ul>
       </div>
 
@@ -531,7 +530,6 @@
       </div>
 
     </div>
-    <p class="pricing-note rv">Paketen med bindningstid löper automatiskt och kan sägas upp med 30 dagars varsel efter bindningstidens slut.</p>
   </div>
 </section>
 
@@ -552,8 +550,6 @@
       <div class="ticker-item"><img src="logos/husqvarna.jpeg"     alt="Husqvarna"           class="ticker-logo"></div>
       <div class="ticker-item"><img src="logos/nuura.png"          alt="Nuura"               class="ticker-logo"></div>
       <div class="ticker-item"><img src="logos/segway.png"         alt="Segway"              class="ticker-logo"></div>
-      <div class="ticker-item"><img src="logos/jape.webp"          alt="JAPE"                class="ticker-logo"></div>
-      <div class="ticker-item"><img src="logos/tergent.jpg"        alt="Tergent"             class="ticker-logo"></div>
       <div class="ticker-item" aria-hidden="true"><img src="logos/lexington.png"    alt="" class="ticker-logo"></div>
       <div class="ticker-item" aria-hidden="true"><img src="logos/mille_notti.avif" alt="" class="ticker-logo"></div>
       <div class="ticker-item" aria-hidden="true"><img src="logos/tinekhome.jpg"    alt="" class="ticker-logo"></div>
@@ -562,8 +558,6 @@
       <div class="ticker-item" aria-hidden="true"><img src="logos/husqvarna.jpeg"   alt="" class="ticker-logo"></div>
       <div class="ticker-item" aria-hidden="true"><img src="logos/nuura.png"        alt="" class="ticker-logo"></div>
       <div class="ticker-item" aria-hidden="true"><img src="logos/segway.png"       alt="" class="ticker-logo"></div>
-      <div class="ticker-item" aria-hidden="true"><img src="logos/jape.webp"        alt="" class="ticker-logo"></div>
-      <div class="ticker-item" aria-hidden="true"><img src="logos/tergent.jpg"      alt="" class="ticker-logo"></div>
     </div>
   </div>
 </div>
@@ -590,7 +584,7 @@
 <script>
 // ── CURTAIN ──────────────────────────────────────
 window.addEventListener('load', () => {
-  setTimeout(() => document.body.classList.add('ready'), 120);
+  setTimeout(() => document.body.classList.add('ready'), 600);
 });
 
 // ── CURSOR ───────────────────────────────────────
